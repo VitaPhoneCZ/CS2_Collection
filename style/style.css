@@ -1,12 +1,15 @@
 body {
-    /*display: flex;*/
     min-height: 100vh;
-    /*justify-content: center;*/
     align-items: center;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: black;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+     z-index: -1;
 }
 
 h1 {
@@ -49,7 +52,7 @@ a {
 }
 
 nav {
-    background-color: none ;
+    background-color: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -59,56 +62,57 @@ nav {
     align-items: center;
     padding: 10px 0;
     z-index: 2;
-  }
-  
-  nav a {
-    text-decoration: none;
-      color: rgb(255, 255, 255);
-      padding: 10px 20px;
-      font-weight: bold;
-      display: block;  /* Make them fill the box */
-      border: 1px solid #ddd;  /* Add a border */
-      border-radius: 5px;  /* Add rounded corners */
-      margin: 0 5px;  /* Add spacing between boxes */
-      font-size: 20px;
-      background: black;
- 
-  }
+}
 
-  nav a:hover {
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-weight: bold;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 20px;
+    background: black;
+
+}
+
+nav a:hover {
     background: #ddd;
     color: black;
-  }
+}
 
-  .content-container {
+.content-container {
     display: flex;
-    flex-direction: column; /* Change to column for vertical alignment */
+    flex-direction: column;
     align-items: center;
-  }
-  
-  .centered-content {  /* Added styles for new div */
+}
+
+.centered-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-  }
-  
-  .pfp {
+}
+
+.pfp {
     flex: 1;
-  }
-  
-  .pfp img {
-/*    margin: 0 auto;*/
+}
+
+.pfp img {
+
     display: block;
     max-width: 500px;
-  }
-  
-  .text-container {
+}
+
+.text-container {
     text-align: right;
     padding-right: 10px;
-  }
-  /*----------------------------------*/
-  .team {
+}
+
+/*----------------------------------*/
+.team {
     z-index: 1;
     display: flex;
     flex-wrap: wrap;
@@ -138,12 +142,12 @@ nav {
     z-index: 1;
     transform: translateY(200px);
     position: relative;
-    background: #333;
+    background: #161616;
 
 }
 
 .team .card:hover .side.side1 {
-    background: deepskyblue;
+    background: rgb(97, 97, 97);
     transform: translateY(0);
 }
 
@@ -153,7 +157,7 @@ nav {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8);
     transform: translateY(-150px);
     position: relative;
-    background: #fff;
+    background: #797979;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +175,7 @@ nav {
 .team .card .side.side2 .img-info p {
     margin: 0;
     padding: 0;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 20px;
 }
 
@@ -186,7 +190,7 @@ nav {
 }
 
 .team .card .side.side1 .img-info img {
-    
+
     width: 80%;
 }
 
@@ -216,7 +220,7 @@ nav {
     background: deepskyblue;
     color: #fff;
 }*/
-  
+
 /*nav {
   position: absolute;
   margin: auto;
