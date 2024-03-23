@@ -115,6 +115,9 @@ body {
   }
 
   @media only screen and (max-width: 768px) {
+    body {
+      background-image: url("bg-m.jpg");
+    }
     .pfp img {
         max-width: 150px; /* Adjust this value for phones */
     }
