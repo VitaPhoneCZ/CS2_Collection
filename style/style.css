@@ -151,18 +151,18 @@ nav a:hover {
   z-index: 1;
   transform: translateY(200px);
   position: relative;
-  background: #161616;
+  background: #5f0000; /* Nastaví barvu pozadí */
 }
 
 .team .card:hover .side.side1 {
-  background: rgb(97, 97, 97);
+  background: rgb(97, 97, 97); /* Nastaví barvu pozadí */
   transform: translateY(0);
 }
 
 .team .card .side.side2 {
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 20px 20px rgba(104, 0, 0, 0.8); /* Nastaví barvu stínu */
   transform: translateY(-150px);
   position: relative;
   background: #797979;
@@ -182,12 +182,12 @@ nav a:hover {
 .team .card .side.side2 .img-info p {
   margin: 0;
   padding: 0;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255); /* Nastaví barvu textu */
   font-size: 20px;
 }
 
 .team .card .side.side1 .img-info {
-  opacity: 0.2;
+  opacity: 0.; /* Nastaví průhlednost */
   transition: 0.5s;
   text-align: center;
 }
@@ -205,5 +205,5 @@ nav a:hover {
   font-size: 1.5em;
   margin: 10px 0 0;
   padding: 0;
-  color: #fff;
+  color: #fff; /* Nastaví barvu textu */
 }
