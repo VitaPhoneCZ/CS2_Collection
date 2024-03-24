@@ -1,220 +1,209 @@
 body {
-    min-height: 100vh;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: black;
-    background-image: url("bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    z-index: -1;
+  align-items: center; /* Zarovná prvky na střed. */
+  font-family: Arial, sans-serif; /* Nastaví font. */
+  background-image: url("bg.jpg"); /* Nastaví obrázek pozadí. */
+  background-repeat: no-repeat; /* Nastaví obrázek pozadí tak, aby se neopakoval. */
+  background-attachment: fixed; /* Připevní obrázek na pozadí k posuvnému prvku. */
+  background-size: 100% 100%; /* Změní velikost obrázku na pozadí tak, aby pokryl celou oblast zobrazení. */
+  z-index: -1; /* Umístí obrázek na pozadí za všechen další obsah. */
+}
 
-  }
-  
-  h1 {
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+h1 {
+  font-size: 32px; /* Nastaví velikost písma */
+  color: white; /* Nastaví barvu textu */
+}
+
+p {
+  font-size: 2em; /* Nastaví velikost písma */
+  color: white; /* Nastaví barvu textu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p.centered-text {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: white;
+}
+
+a {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: white; /* Nastaví barvu textu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 2;
+}
+
+nav a {
+  text-decoration: none;
+  color: white; /* Nastaví barvu textu */
+  padding: 10px 20px;
+  font-weight: bold;
+  display: block;
+  border: 1px solid #ddd; /* Nastaví barvu okraje */
+  border-radius: 5px;
+  margin: 0 5px;
+  font-size: 20px;
+  background: black; /* Nastaví barvu pozadí */
+}
+
+nav a:hover {
+  background: #ddd; /* Nastaví barvu pozadí */
+  color: black; /* Nastaví barvu textu */
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.pfp {
+  flex: 1;
+}
+
+.pfp img {
+  display: block;
+  max-width: 400px;
+}
+
+.text-container {
+  text-align: right;
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url("bg-m.jpg");
   }
 
-  h2 {
-    font-size: 2em;
-  }
-  
-  p {
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  p.centered-text {
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: white;
-  }
-  
-  a {
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    z-index: 2;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    font-weight: bold;
-    display: block;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 0 5px;
-    font-size: 20px;
-    background: black;
-  }
-  
-  nav a:hover {
-    background: #ddd;
-    color: black;
-  }
-  
-  .content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
-  }
-  
-  .centered-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .pfp {
-    flex: 1;
-  }
-  
   .pfp img {
-    display: block;
-    max-width: 400px;
-  }
-  
-  .text-container {
-    text-align: right;
-    padding-right: 10px;
+    max-width: 150px;
   }
 
-  @media only screen and (max-width: 768px) {
-    body {
-      background-image: url("bg-m.jpg");
-    }
-    .pfp img {
-        max-width: 150px; /* Adjust this value for phones */
-    }
-    nav a {
-      font-size: 12px;
-    }
-    h1 {
-      font-size: 20px;
-    }
+  nav a {
+    font-size: 12px;
   }
 
-  
-  /*----------------------------------*/
-  .team {
-    z-index: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 70px auto;
-    position: relative;
-    max-width: 1300px;
-    padding: 10px;
-  }
-  
-  .team .card {
-    position: relative;
-    cursor: pointer;
-    text-align: center;
-    padding: 5px;
-  }
-  
-  .team .card .side {
-    width: 350px;
-    height: 350px;
-    transition: 0.5s;
-  }
-  
-  .team .card .side.side1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(200px);
-    position: relative;
-    background: #161616;
-  }
-  
-  .team .card:hover .side.side1 {
-    background: rgb(97, 97, 97);
-    transform: translateY(0);
-  }
-  
-  .team .card .side.side2 {
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8);
-    transform: translateY(-150px);
-    position: relative;
-    background: #797979;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .team .card:hover .side.side2 {
-    transform: translateY(0);
-  }
-  
-  .team .card .side.side2 .img-info h2 {
-    margin: 0;
-  }
-  
-  .team .card .side.side2 .img-info p {
-    margin: 0;
-    padding: 0;
-    color: rgb(255, 255, 255);
+  h1 {
     font-size: 20px;
   }
-  
-  .team .card .side.side1 .img-info {
-    opacity: 0.2;
-    transition: 0.5s;
-    text-align: center;
-  }
-  
-  .team .card:hover .side.side1 .img-info {
-    opacity: 1;
-  }
-  
-  .team .card .side.side1 .img-info img {
-    width: 80%;
-  }
-  
-  .team .card .side.side1 .img-info h3 {
-    text-align: center;
-    font-size: 1.5em;
-    margin: 10px 0 0;
-    padding: 0;
-    color: #fff;
-  }
+}
+
+
+/*----------------------------------*/
+.team {
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 70px auto;
+  position: relative;
+  max-width: 1300px;
+  padding: 10px;
+}
+
+.team .card {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+}
+
+.team .card .side {
+  width: 350px;
+  height: 350px;
+  transition: 0.5s;
+}
+
+.team .card .side.side1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(200px);
+  position: relative;
+  background: #161616;
+}
+
+.team .card:hover .side.side1 {
+  background: rgb(97, 97, 97);
+  transform: translateY(0);
+}
+
+.team .card .side.side2 {
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8);
+  transform: translateY(-150px);
+  position: relative;
+  background: #797979;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team .card:hover .side.side2 {
+  transform: translateY(0);
+}
+
+.team .card .side.side2 .img-info h2 {
+  margin: 0;
+}
+
+.team .card .side.side2 .img-info p {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.team .card .side.side1 .img-info {
+  opacity: 0.2;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.team .card:hover .side.side1 .img-info {
+  opacity: 1;
+}
+
+.team .card .side.side1 .img-info img {
+  width: 80%;
+}
+
+.team .card .side.side1 .img-info h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+}
