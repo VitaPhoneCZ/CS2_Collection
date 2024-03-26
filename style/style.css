@@ -15,9 +15,8 @@ body {
   /* Umístí obrázek na pozadí za všechen další obsah. */
 }
 
-h1,
-p,
-a {
+/* Naformátování  */
+h1,p,a {
   font-size: 32px;
   /* Nastaví velikost písma */
   color: white;
@@ -28,6 +27,7 @@ a {
   /* Horizontální zarovnání na střed */
 }
 
+  /* Navigační lišta */
 nav {
   position: fixed;
   /* Fixní pozice na obrazovce */
@@ -43,6 +43,7 @@ nav {
   /* Umístění nad většinou obsahu */
 }
 
+/* Najedení myší na navigační lištu */
 nav a {
   text-decoration: none;
   /* Odstranění podtržení */
@@ -64,6 +65,7 @@ nav a {
   /* Barva pozadí */
 }
 
+/* Najedení myší na navigační lištu */
 nav a:hover {
   background: #ddd;
   /* Barva pozadí při najetí myší */
@@ -71,6 +73,7 @@ nav a:hover {
   /* Barva textu při najetí myší */
 }
 
+/* Nadpis */
 .content-container {
   display: flex;
   /* Flexibilní uspořádání */
@@ -82,6 +85,7 @@ nav a:hover {
   /* Horní odsazení */
 }
 
+/* Nadpis */
 .centered-content {
   display: flex;
   /* Flexibilní uspořádání */
@@ -94,6 +98,7 @@ nav a:hover {
   /* Maximální šířka obrázku */
 }
 
+/* Změna rozhraní na telefonu */
 @media only screen and (max-width: 768px) {
   body {
     background-image: url("bg-m.jpg");
