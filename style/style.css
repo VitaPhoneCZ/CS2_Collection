@@ -15,6 +15,10 @@ body {
   /* Umístí obrázek na pozadí za všechen další obsah. */
 }
 
+footer p{
+  font-size: 15px;
+}
+
 /* Naformátování  */
 h1,p,a {
   font-size: 32px;
