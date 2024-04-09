@@ -3,7 +3,7 @@ body {
   /* Zarovná prvky na střed. */
   font-family: Arial, sans-serif;
   /* Nastaví font. */
-  background-image: url("bg.jpg");
+  background-image: url("bg-m.jpg");
   /* Nastaví obrázek pozadí. */
   background-repeat: no-repeat;
   /* Nastaví obrázek pozadí tak, aby se neopakoval. */
@@ -17,11 +17,12 @@ body {
 
 footer p{
   font-size: 15px;
+  /* Nastaví velikost písma */
 }
 
 /* Naformátování  */
 h1,p,a {
-  font-size: 32px;
+  font-size: 20px;
   /* Nastaví velikost písma */
   color: white;
   /* Nastaví barvu textu */
@@ -63,7 +64,7 @@ nav a {
   /* Zaokrouhlení rohů */
   margin: 0 5px;
   /* Vnější odsazení */
-  font-size: 20px;
+  font-size: 12px;
   /* Velikost písma */
   background: black;
   /* Barva pozadí */
@@ -98,29 +99,29 @@ nav a:hover {
 }
 
 .pfp img {
-  max-width: 400px;
+  max-width: 150px;
   /* Maximální šířka obrázku */
 }
 
 /* Změna rozhraní na telefonu */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   body {
-    background-image: url("bg-m.jpg");
+    background-image: url("bg.jpg");
     /* Alternativní obrázek pozadí pro telefony */
   }
 
   .pfp img {
-    max-width: 150px;
+    max-width: 400px;
     /* Snížení maximální šířky obrázku protelefony */
   }
 
   nav a {
-    font-size: 12px;
+    font-size: 20px;
     /* Snížení velikosti písma pro telefony */
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 32px;
     /* Snížení velikosti písma pro telefony */
   }
 }
