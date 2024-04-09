@@ -107,22 +107,22 @@ nav a:hover {
 @media only screen and (min-width: 768px) {
   body {
     background-image: url("bg.jpg");
-    /* Alternativní obrázek pozadí pro telefony */
+    /* Alternativní obrázek pozadí pro pc */
   }
 
   .pfp img {
     max-width: 400px;
-    /* Snížení maximální šířky obrázku protelefony */
+    /* Změna maximální šířky obrázku pro pc */
   }
 
   nav a {
     font-size: 20px;
-    /* Snížení velikosti písma pro telefony */
+    /* Změna velikosti písma pro pc */
   }
 
   h1 {
     font-size: 32px;
-    /* Snížení velikosti písma pro telefony */
+    /* Změna velikosti písma pro pc */
   }
 }
 
