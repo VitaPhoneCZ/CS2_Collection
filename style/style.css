@@ -79,7 +79,7 @@ nav a:hover {
 }
 
 /* Nadpis */
-.content-container {
+.content-main {
   display: flex;
   /* Flexibilní uspořádání */
   flex-direction: column;
