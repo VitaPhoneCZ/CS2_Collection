@@ -222,19 +222,8 @@ nav a:hover {
   /* Animace posunutí karet při najetí */
 }
 
-.team .card .side.side2 .img-info h2 {
-  margin: 0;
-  /* Vnější odsazení */
-}
-
 .team .card .side.side2 .img-info p {
-  margin: 0;
-  /* Vnější odsazení */
-  padding: 0;
-  /* Vnitřní odsazení */
-  color: rgb(255, 255, 255);
-  /* Nastaví barvu textu */
-  font-size: 20px;
+  font-size: 18px;
   /* Velikost písma */
 }
 
@@ -243,8 +232,6 @@ nav a:hover {
   /* Nastaví průhlednost */
   transition: 0.5s;
   /* Animace přechodu průhlednosti */
-  text-align: center;
-  /* Zarovnání textu na střed */
 }
 
 .team .card:hover .side.side1 .img-info {
