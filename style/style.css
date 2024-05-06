@@ -132,7 +132,8 @@ nav a:hover {
   }
 }
 
-/*_____________________________________*/
+/*___________________Animace karet___________________*/
+/*https://www.codingflicks.com/2022/01/css-card-hover-effects.html*/
 
 .team {
   z-index: 1;
@@ -257,7 +258,7 @@ nav a:hover {
   /* Nastaví barvu textu */
 }
 
-/*________________________________Hamburger menu________________________________*/
+/*___________________Hamburger menu z hodiny___________________*/
 
 body {
   margin: 0;
@@ -332,9 +333,7 @@ header nav {
   flex-direction: column;
   gap: 36px;
   justify-content: center;
-/* align-items: center;*/
   padding: 16px 0;
-  /*box-shadow: rgba(255, 0, 0, 0.425) 0px 4px 12px;*/
   transition: transform ease 1s;
 }
 header nav a {
