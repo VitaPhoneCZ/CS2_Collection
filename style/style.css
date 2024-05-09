@@ -105,6 +105,16 @@ nav a:hover {
   /* Maximální šířka obrázku */
 }
 
+.pfp img {
+  transition: transform 50s ease;
+}
+
+.pfp img.flipped {
+  transform: rotate(18000deg);
+}
+
+
+
 /* Změna rozhraní pro pc */
 @media only screen and (min-width: 768px) {
   body {
@@ -193,7 +203,7 @@ nav a:hover {
 .team .card:hover .side.side1 {
   background: rgb(107, 0, 0);
   /* Nastaví barvu pozadí */
-  transform: translateY(0);
+  transform: translateY(0px);
   /* Animace posunutí karet při najetí */
 }
 
@@ -219,7 +229,7 @@ nav a:hover {
 }
 
 .team .card:hover .side.side2 {
-  transform: translateY(0);
+  transform: translateY(0px);
   /* Animace posunutí karet při najetí */
 }
 
